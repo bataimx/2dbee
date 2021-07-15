@@ -38,19 +38,13 @@ export default function mainScene() {
   });
 
   k.keyPress('space', () => {
-    if ( this.isPaused ) {
-      k.go('main');
-      return;
-    }
+    if ( this.isPaused ) { return; }
     this.birdy.jump(JUMP_FORCE);
     k.play('jump');
   });
 
   k.mouseClick(() => {
-    if ( this.isPaused ) {
-      k.go('main');
-      return;
-    }
+    if ( this.isPaused ) { return; }
     this.birdy.jump(JUMP_FORCE);
     k.play('jump');
   });
