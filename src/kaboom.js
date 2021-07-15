@@ -7,5 +7,5 @@ export const k = kaboom({
 	clearColor: [0, 0, 0, 1],
 	debug: true,
 });
-
+// k.debug.inspect = true;
 export default k;
